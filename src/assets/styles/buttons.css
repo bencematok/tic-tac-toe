@@ -1,0 +1,36 @@
+.btn {
+    all: unset;
+    outline: revert;
+}
+
+.btn-field {
+    height: 100px;
+    width: 100px;
+    background-color: white;
+    font-size: 6rem;
+    font-weight: bold;
+    text-align: center;
+    line-height: 1px;
+}
+
+.btn-figure {
+    padding-inline: 1rem;
+    padding-block: 0.5rem;
+    border: 3px solid black;
+    margin-inline: 0.5rem;
+    transition: transform 300ms;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.btn-figure:hover {
+    transform: scale(1.1);
+}
+
+.btn-field:disabled {
+    outline: revert;
+}
+
+.btn-figure:active {
+    transform: translate(3px, 3px);
+}

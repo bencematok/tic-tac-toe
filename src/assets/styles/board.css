@@ -1,0 +1,11 @@
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, auto);
+    gap: 1rem;
+    background-color: black;
+    margin-inline: auto;
+    margin-block: 1.5rem;
+    max-width: 33%;
+    border: 1rem solid black;
+}
