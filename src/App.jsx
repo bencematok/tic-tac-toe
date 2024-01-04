@@ -23,21 +23,21 @@ function App() {
 
   // The various combinations for winning.
   const winningCombinations = () => {
-    if (fields[0][0] === fields[0][1] && fields[0][0] === fields[0][2] && fields[0][1] === fields[0][2] && fields[0].every(field => field !== '')) {
+    if (fields[0][0] === fields[0][1] && fields[0][0] === fields[0][2] && fields[0].every(field => field !== '')) {
       return true;
-    } else if (fields[1][0] === fields[1][1] && fields[1][0] === fields[1][2] && fields[1][1] === fields[1][2] && fields[1].every(field => field !== '')) {
+    } else if (fields[1][0] === fields[1][1] && fields[1][0] === fields[1][2] && fields[1].every(field => field !== '')) {
       return true;
-    } else if (fields[2][0] === fields[2][1] && fields[2][0] === fields[2][2] && fields[2][1] === fields[2][2] && fields[2].every(field => field !== '')) {
+    } else if (fields[2][0] === fields[2][1] && fields[2][0] === fields[2][2] && fields[2].every(field => field !== '')) {
       return true;
-    } else if (fields[0][0] === fields[1][0] && fields[0][0] === fields[2][0] && fields[1][0] === fields[2][0] && fields[0][0] !== '' && fields[1][0] !== '' && fields[2][0] !== '') {
+    } else if (fields[0][0] === fields[1][0] && fields[0][0] === fields[2][0] && fields[0][0] !== '' && fields[1][0] !== '' && fields[2][0] !== '') {
       return true;
-    } else if (fields[0][1] === fields[1][1] && fields[0][1] === fields[2][1] && fields[1][1] === fields[2][1] && fields[0][1] !== '' && fields[1][1] !== '' && fields[2][1] !== '') {
+    } else if (fields[0][1] === fields[1][1] && fields[0][1] === fields[2][1] && fields[0][1] !== '' && fields[1][1] !== '' && fields[2][1] !== '') {
       return true;
-    } else if (fields[0][2] === fields[1][2] && fields[0][2] === fields[2][2] && fields[1][2] === fields[2][2] && fields[0][2] !== '' && fields[1][2] !== '' && fields[2][2] !== '') {
+    } else if (fields[0][2] === fields[1][2] && fields[0][2] === fields[2][2] && fields[0][2] !== '' && fields[1][2] !== '' && fields[2][2] !== '') {
       return true;
-    } else if (fields[0][0] === fields[1][1] && fields[0][0] === fields[2][2] && fields[1][1] === fields[2][2] && fields[0][0] !== '' && fields[1][1] !== '' && fields[2][2] !== '') {
+    } else if (fields[0][0] === fields[1][1] && fields[0][0] === fields[2][2] && fields[0][0] !== '' && fields[1][1] !== '' && fields[2][2] !== '') {
       return true;
-    } else if (fields[0][2] === fields[1][1] && fields[0][2] === fields[2][0] && fields[1][1] === fields[2][0] && fields[0][2] !== '' && fields[1][1] !== '' && fields[2][0] !== '') {
+    } else if (fields[0][2] === fields[1][1] && fields[0][2] === fields[2][0] && fields[0][2] !== '' && fields[1][1] !== '' && fields[2][0] !== '') {
       return true;
     };
   };
